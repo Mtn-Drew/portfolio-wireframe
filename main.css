@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; 
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+section {
+  min-height: 200px;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.wrapper-project-apps, .wrapper-contact-icon {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.project-app {
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  min-width: 200px;
+  border: 1px solid black;
+  margin-bottom:20px;
+
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  min-height: 100px;
+  min-width: 100px;
+  border: 1px solid black;
+  margin-bottom:20px;
+}
