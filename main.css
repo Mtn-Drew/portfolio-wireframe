@@ -29,24 +29,78 @@ section:nth-child(even) {
 .wrapper-project-apps, .wrapper-contact-icon {
   display: flex;
   justify-content: space-around;
-  
-}
+  }
+
+.wrapper-contact-icon {
+  max-width: 700px;
+}  
 
 .project-app {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   min-height: 300px;
-  min-width: 200px;
+  min-width: 150px;
   border: 1px solid black;
-  margin-bottom:20px;
+  margin:10px;
+  font-size: 18px;
+}
 
+.wrapper-bio-pic {
+  display:flex;
+  margin: 20px;
+  
+}
+
+.hide {
+  display:none;
 }
 
 .contact-icon {
   display: flex;
   flex-direction: row;
   min-height: 100px;
-  min-width: 100px;
+  min-width: 80px;
   border: 1px solid black;
-  margin-bottom:20px;
+}
+
+.large-screen-shot {
+  min-width: 200px;
+  min-height: 100px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width:720px) {
+  .project-app {
+    min-width: 320px;
+    display:block;
+  }
+
+  .contact-icon {
+    min-width: 120px;
+  }
+
+  .profile-pic {
+    display:inline;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 400px;
+    border: 1px solid black;
+    margin: 20px;
+    box-shadow: 4px -3px 5px 0px black;
+  }
+
+  .large-screen-shot{
+    display: inline-block;
+    width:50%;
+  }
+}
+
+@media screen and (min-width:1199px) {
+  .wrapper-project-app {
+    display: flex;
+  }
+
+  .large-screen-shot {
+    display:inline;
+  }
 }
