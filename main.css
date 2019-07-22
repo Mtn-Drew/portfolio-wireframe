@@ -15,6 +15,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  border:1px solid black;
 }
 
 section {
@@ -26,22 +27,20 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
-.wrapper-project-apps, .wrapper-contact-icon {
+ .wrapper-contact-icon {
   display: flex;
-  justify-content: space-around;
-  }
-
-.wrapper-contact-icon {
-  max-width: 700px;
+  /* justify-content: center; */
+  margin: auto;
 }  
 
 .project-app {
-  display: flex;
+  display: block;
   /* flex-direction: row; */
   min-height: 300px;
-  min-width: 150px;
+  min-width: 200px;
   border: 1px solid black;
   margin:10px;
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -57,15 +56,16 @@ section:nth-child(even) {
 
 .contact-icon {
   display: flex;
-  flex-direction: row;
   min-height: 100px;
   min-width: 80px;
   border: 1px solid black;
+  margin: auto;
 }
 
 .large-screen-shot {
+  display:block;
   min-width: 200px;
-  min-height: 100px;
+  min-height: 300px;
   border: 1px solid black;
 }
 
@@ -78,6 +78,11 @@ section:nth-child(even) {
   .contact-icon {
     min-width: 120px;
   }
+
+  .wrapper-contact-icon {
+    margin: 30px auto;
+    max-width: 700px;
+  }  
 
   .profile-pic {
     display:inline;
@@ -93,6 +98,10 @@ section:nth-child(even) {
     display: inline-block;
     width:50%;
   }
+
+  .wrapper-project-apps {
+    display:flex;
+  }
 }
 
 @media screen and (min-width:1199px) {
@@ -102,5 +111,13 @@ section:nth-child(even) {
 
   .large-screen-shot {
     display:inline;
+  }
+
+  .app-text {
+    display:block;
+  }
+
+  .project-app {
+    display:flex;
   }
 }
