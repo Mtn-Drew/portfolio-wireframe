@@ -3,11 +3,15 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: 'Proza Libre', "Open Sans", sans-serif; 
   font-size: 24px;
   color: #444;
   text-align: center;
   line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif;
 }
 
 nav {
@@ -69,6 +73,15 @@ section:nth-child(even) {
   border: 1px solid black;
 }
 
+.profile-pic {
+  background: url("https://user-images.githubusercontent.com/51786125/61676251-c4777a80-acea-11e9-8f78-806af9b12fe5.png");
+  background-repeat: no-repeat;
+}
+.profile-pic:hover {
+  background: url("https://user-images.githubusercontent.com/51786125/61676248-c2adb700-acea-11e9-9bc3-7787c3abcd01.png");
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width:720px) {
   .project-app {
     min-width: 320px;
@@ -86,8 +99,8 @@ section:nth-child(even) {
 
   .profile-pic {
     display:inline;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 260px;
+    min-height: 400px;
     max-height: 400px;
     border: 1px solid black;
     margin: 20px;
