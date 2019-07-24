@@ -11,24 +11,18 @@ html {
   background-size: cover;
 }
 
+/* change back after doing nav */
 body {
   font-family: 'Darker Grotesque', sans-serif;
-  font-size: 32px;
+  /* font-size: 32px;
   color: #F0EFF0;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.5; */
 }
 
 .landing-page {
   margin-top:600px;
 }
-
-/* .hero {
-  background-image: url('https://user-images.githubusercontent.com/51786125/61713589-7c874080-ad48-11e9-86a2-429dc194585b.jpg');
-  height: 1200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .project-app:hover, .contact-icon:hover {
   background-color: #3E5C76;
@@ -43,14 +37,109 @@ h2 {
   font-size: 32px;
 }
 
-nav {
+/* nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #000500;
   border:1px solid black;
+} */
+
+header {
+  background-color: blue;
+  text-align: center;
+  position: fixed;
+  width:100%;
+  top:0;
+  z-index: 999;
+  }
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: blue;
+  width:100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
 }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity:0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle {
+  display:none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top:0;
+  left:0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display:block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content:'';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity:1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
 
 section {
   min-height: 200px;
