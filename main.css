@@ -4,18 +4,43 @@
 
 html {
   background-color: #35011F;
+  background: url('https://user-images.githubusercontent.com/51786125/61760594-9877fa00-adbb-11e9-8ff0-7e460d995c8e.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  font-family: 'Proza Libre', "Open Sans", sans-serif; 
-  font-size: 24px;
-  color: #CEC2C9;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 32px;
+  color: #F0EFF0;
   text-align: center;
   line-height: 1.5;
 }
 
+.landing-page {
+  margin-top:600px;
+}
+
+/* .hero {
+  background-image: url('https://user-images.githubusercontent.com/51786125/61713589-7c874080-ad48-11e9-86a2-429dc194585b.jpg');
+  height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.project-app:hover, .contact-icon:hover {
+  background-color: #3E5C76;
+}
+
 h1, h2, h3 {
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Proza Libre', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 nav {
@@ -29,11 +54,23 @@ nav {
 
 section {
   min-height: 200px;
-  background-color: #92817A;
+  /* background-color: #92817A; */
+  background-color: rgba(146, 129, 122,.6);
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 32px;
+  color: #F0EFF0;
+  text-align: center;
+  line-height: 1.5;
 }
 
 section:nth-child(even) {
-  background-color: #000500;
+  /* background-color: #000500; */
+  background-color: rgba(0,5,0,.6);
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 32px;
+  color: #F0EFF0;
+  text-align: center;
+  line-height: 1.5;
 }
 
  .wrapper-contact-icon {
@@ -49,6 +86,11 @@ section:nth-child(even) {
   margin:10px;
   padding: 10px;
   font-size: 18px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 24px;
+  color: #F0EFF0;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .wrapper-bio-pic {
