@@ -15,16 +15,6 @@ body {
   margin:0;
 }
 
-
-/* change back after doing nav */
-section {
-  font-family: 'Darker Grotesque', sans-serif;
-  font-size: 32px;
-  color: #F0EFF0;
-  text-align: center;
-  line-height: 1.5;
-}
-
 .top-div h1 {
   font-size: 2rem;
   margin-top:16rem;
@@ -52,10 +42,10 @@ h1, h2, h3 {
 }
 
  h1 {
-   font-size: 5rem;
+   font-size: 32px;
  }
 h2 {
-  font-size: 5rem;
+  font-size: 20px;
 }
 
 /* nav {
