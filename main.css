@@ -25,13 +25,22 @@ section {
   line-height: 1.5;
 }
 
-.top-div {
-  margin-top:10rem;
+.top-div h1 {
+  font-size: 2rem;
+  margin-top:16rem;
 }
 
 
 .landing-page {
-  margin-top:600px;
+  margin-top:80px;
+}
+
+.projects {
+  /* display:none; */
+}
+
+.contact-me {
+  display:none;
 }
 
 .project-app:hover, .contact-icon:hover {
@@ -39,7 +48,6 @@ section {
 }
 
 h1, h2, h3 {
-  /* font-family: 'PT Sans', sans-serif; */
   font-family: 'Proza Libre', sans-serif;
 }
 
@@ -66,6 +74,7 @@ h2 {
 }
 
 header {
+  font-family: 'Darker Grotesque', sans-serif;
   background-color:rgba(117, 62, 95, .8);
   text-align: center;
   position: fixed;
@@ -228,6 +237,10 @@ section:nth-child(even) {
 .profile-pic {
   background: url("https://user-images.githubusercontent.com/51786125/61676251-c4777a80-acea-11e9-8f78-806af9b12fe5.png");
   background-repeat: no-repeat;
+  display:flex;
+  min-width: 50px;
+  min-height: 230px;
+
 }
 .profile-pic:hover {
   background: url("https://user-images.githubusercontent.com/51786125/61676248-c2adb700-acea-11e9-9bc3-7787c3abcd01.png");
