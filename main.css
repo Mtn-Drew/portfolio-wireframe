@@ -18,6 +18,7 @@ body {
 .top-div h1 {
   font-size: 2rem;
   margin-top:16rem;
+  padding-top:100px;
 }
 
 
@@ -26,11 +27,13 @@ body {
 }
 
 .projects {
+  padding-top:100px;
   /* display:none; */
 }
 
 .contact-me {
-  display:none;
+  /* display:none; */
+  margin-bottom:10px;
 }
 
 .project-app:hover, .contact-icon:hover {
@@ -49,14 +52,6 @@ h2 {
   font-size: 24Spx;
 }
 
-/* nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #000500;
-  border:1px solid black;
-} */
 
 .logo {
   width:12rem;
@@ -162,6 +157,20 @@ nav a:hover {
   width: 100%;
 }
 
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
 
 section {
   min-height: 200px;
@@ -186,7 +195,10 @@ section:nth-child(even) {
 
  .wrapper-contact-icon {
   display: flex;
-  margin: auto;
+  justify-content: space-around;
+  /* margin-left: auto;
+  margin-right:auto; */
+  margin-bottom:10px;
 }  
 
 .project-app {
@@ -207,6 +219,7 @@ section:nth-child(even) {
 .wrapper-bio-pic {
   display:flex;
   margin: 20px;
+  padding-top:100px;
 }
 
 .hide {
@@ -215,10 +228,11 @@ section:nth-child(even) {
 
 .contact-icon {
   display: flex;
-  min-height: 100px;
-  min-width: 80px;
+  /* min-height: 100px;
+  min-width: 80px; */
   border: 1px solid black;
   margin: auto;
+  margin-bottom:10px;
 }
 
 .large-screen-shot {
@@ -241,6 +255,11 @@ section:nth-child(even) {
 .profile-pic:hover {
   background: url("https://user-images.githubusercontent.com/51786125/61676248-c2adb700-acea-11e9-9bc3-7787c3abcd01.png");
   background-repeat: no-repeat;
+}
+
+.email-icon, .linkedin-icon, .github-icon {
+  width: 80px;
+  height:80px;
 }
 
 @media screen and (min-width:720px) {
