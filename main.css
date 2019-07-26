@@ -39,13 +39,14 @@ body {
 
 h1, h2, h3 {
   font-family: 'Proza Libre', sans-serif;
+  padding:10px;
 }
 
  h1 {
    font-size: 32px;
  }
 h2 {
-  font-size: 20px;
+  font-size: 24Spx;
 }
 
 /* nav {
@@ -65,7 +66,7 @@ h2 {
 
 header {
   font-family: 'Darker Grotesque', sans-serif;
-  background-color:rgba(117, 62, 95, .8);
+  background-color:rgba(117, 62, 95, 1);
   text-align: center;
   position: fixed;
   width:100%;
@@ -78,7 +79,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background-color: rgba(117, 62, 95, .8);
+  background-color: rgba(117, 62, 95, 1);
   width:10rem;
   transform: scale(1,0);
   transform-origin: top;
@@ -157,6 +158,9 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.web-icons {
+  width: 100%;
+}
 
 
 section {
@@ -218,9 +222,10 @@ section:nth-child(even) {
 }
 
 .large-screen-shot {
+  /* display:none; */
   display:block;
-  min-width: 10rem;
-  min-height: 20rem;
+  width:100%;
+  /* min-height: 20rem; */
   border: 1px solid black;
 }
 
@@ -230,6 +235,7 @@ section:nth-child(even) {
   display:flex;
   min-width: 50px;
   min-height: 230px;
+  margin: 10px;
 
 }
 .profile-pic:hover {
