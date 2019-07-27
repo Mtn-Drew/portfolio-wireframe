@@ -280,8 +280,7 @@ section:nth-child(even) {
   .profile-pic {
     min-width: 260px;
     min-height: 420px;
- 
-  }
+   }
 
   .large-screen-shot{
     display: inline-block;
@@ -295,6 +294,10 @@ section:nth-child(even) {
   .top-p {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .nav-toggle-label {
+    display:none;
   }
 }
 
