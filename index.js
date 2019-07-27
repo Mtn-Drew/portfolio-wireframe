@@ -14,4 +14,14 @@ const navSlide = () => {
     });
 }
 
+$(".burger").hover (function() {
+  $(".line1").css("background-color", "white");
+  $(".line2").css("background-color", "white");
+  $(".line3").css("background-color", "white");
+}, function() {
+  $(".line1").css("background-color", "black");
+  $(".line2").css("background-color", "black");
+  $(".line3").css("background-color", "black");
+});
+
 navSlide();
