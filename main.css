@@ -21,7 +21,6 @@ body {
   padding-top:100px;
 }
 
-
 .landing-page {
   margin-top:80px;
 }
@@ -53,8 +52,7 @@ h2 {
 
 .logo {
   width:12rem;
-  margin-left:3rem;
-
+  margin-left:.5rem;
 }
 
 header {
@@ -67,7 +65,7 @@ header {
   z-index: 999;
   }
 
-nav {
+/* nav {
   position: absolute;
   text-align: left;
   top: 100%;
@@ -149,7 +147,52 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity:1;
   transition: opacity 250ms ease-in-out 250ms;
-}
+} */
+
+  /* Nav stuff */
+  .nav-toggle-label {
+    display:none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    
+  }
+
+  .nav-links {
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 400px;
+  }
+
+  .nav-links li {
+    list-style: none;
+    max-width: 700px;
+  }
+
+  .nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+  .burger {
+      display: none;
+      cursor: pointer;
+    }
+    
+  .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color:black;
+  }
 
 .web-icons {
   width: 100%;
@@ -265,6 +308,44 @@ section:nth-child(even) {
 .p2h {
   display:none;
 }
+.nav-active {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width:719px) {
+
+  body {
+    overflow: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 6vh;
+    background-color:rgba(117, 62, 95, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
+    transform: translateX(100%);
+    transition: transform .5x ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display:block;
+  }
+
+}
+
+
+
+
+
+
 
 @media screen and (min-width:720px) {
   .project-app {
@@ -296,9 +377,55 @@ section:nth-child(even) {
     flex-direction: row-reverse;
   }
 
+  /* Nav stuff */
   .nav-toggle-label {
     display:none;
   }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    
+  }
+
+  .nav-links {
+    display:flex;
+    justify-content: space-around;
+    width: 30%;
+    min-width: 400px;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+    .burger {
+      display: none;
+    }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color:black;
+  }
+
+
+
+
+
+
+
 }
 
 @media screen and (min-width:1199px) {
