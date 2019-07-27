@@ -155,6 +155,7 @@ nav a:hover {
 
 .web-icons {
   width: 100%;
+  max-width: 500px;
 }
 
 .hvr-glow {
@@ -199,6 +200,7 @@ section:nth-child(even) {
   /* margin-left: auto;
   margin-right:auto; */
   margin-bottom:10px;
+  max-width: 700px;
 }  
 
 .project-app {
@@ -239,6 +241,7 @@ section:nth-child(even) {
   /* display:none; */
   display:block;
   width:100%;
+  max-width: 500px;
   /* min-height: 20rem; */
   border: 1px solid black;
 }
@@ -246,21 +249,35 @@ section:nth-child(even) {
 .profile-pic {
   background: url("https://user-images.githubusercontent.com/51786125/61676251-c4777a80-acea-11e9-8f78-806af9b12fe5.png");
   background-repeat: no-repeat;
-  display:flex;
-  min-width: 50px;
+  background-position: right top;
+  min-width: 60px;
   min-height: 230px;
   margin: 10px;
-  justify-content: flex-end;
-  align-self: flex-end;
+  margin-bottom:0px;
 }
 .profile-pic:hover {
   background: url("https://user-images.githubusercontent.com/51786125/61676248-c2adb700-acea-11e9-9bc3-7787c3abcd01.png");
   background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .email-icon, .linkedin-icon, .github-icon {
   width: 80px;
   height:80px;
+}
+
+.p1 {
+  margin-top:0;
+}
+
+/* @media @ screen and (min-width:550px) {
+  .profile-pic {
+    
+  }
+} */
+
+.p2h {
+  display:none;
 }
 
 @media screen and (min-width:720px) {
@@ -269,26 +286,41 @@ section:nth-child(even) {
     display:block;
   }
 
-  .contact-icon {
+  /* .contact-icon {
     min-width: 120px;
-  }
+  } */
+  /* .wrapper-bio {
+    display:flex;
+    flex-direction: row-reverse;
+  } */
 
   .wrapper-contact-icon {
     margin: 30px auto;
     max-width: 700px;
   }  
 
-  .wrapper-bio-pic {
+  /* .wrapper-bio-pic {
     display: flex;
-    
-  }
+    } */
 
-  .profile-pic {
+  /* .wrapper-bio p {
+    display: flex;
+    text-align: left;
+  } */
+
+  /* .profile-pic {
     align-self: flex-end;
-    min-width: 260px;
+    width: 260px;
     min-height: 400px;
     max-height: 400px;
     margin: 20px;
+    flex-basis: 260px;
+  } */
+
+  .profile-pic {
+    min-width: 260px;
+    min-height: 420px;
+ 
   }
 
   .large-screen-shot{
@@ -296,13 +328,42 @@ section:nth-child(even) {
     width:50%;
   }
 
-  .wrapper-project-apps {
+  /* .wrapper-project-apps {
     display:flex;
+  } */
+
+  .p1, .p2, .p2h {
+    text-align: left;
+  }
+
+  /* .p2{
+    align-self: flex-end;
+    display:block;
+  } */
+
+  .top-p {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
+
 @media screen and (min-width:1199px) {
-  .wrapper-project-app {
+
+  .p2h {
+    display:flex;
+    
+  }
+
+  .p2 {
+    display:none;
+  }
+
+  .top-p {
+    flex-wrap: flex;
+  }
+
+  /* .wrapper-project-app {
     display: flex;
   }
 
@@ -316,5 +377,5 @@ section:nth-child(even) {
 
   .project-app {
     display:flex;
-  }
+  } */
 }
